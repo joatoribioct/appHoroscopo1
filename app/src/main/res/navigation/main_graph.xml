@@ -9,7 +9,11 @@
         android:id="@+id/horoscopoFragment"
         android:name="com.joatoribio.horoscopoapp.ui.horoscopos.HoroscopoFragment"
         android:label="fragment_horoscopo"
-        tools:layout="@layout/fragment_horoscopo" />
+        tools:layout="@layout/fragment_horoscopo" >
+        <action
+            android:id="@+id/action_horoscopoFragment_to_horosocpoDetailActivity"
+            app:destination="@id/horosocpoDetailActivity" />
+    </fragment>
     <fragment
         android:id="@+id/luckFragment"
         android:name="com.joatoribio.horoscopoapp.ui.luck.LuckFragment"
@@ -20,4 +24,13 @@
         android:name="com.joatoribio.horoscopoapp.ui.palmistry.PalmistryFragment"
         android:label="fragment_palmistry"
         tools:layout="@layout/fragment_palmistry" />
+    <activity
+        android:id="@+id/horosocpoDetailActivity"
+        android:name="com.joatoribio.horoscopoapp.ui.detail.HorosocpoDetailActivity"
+        android:label="activity_horosocpo_detail"
+        tools:layout="@layout/activity_horosocpo_detail" >
+        <argument
+            android:name="type"
+            app:argType="com.joatoribio.horoscopoapp.domain.model.HoroscopoModel" />
+    </activity>
 </navigation>
