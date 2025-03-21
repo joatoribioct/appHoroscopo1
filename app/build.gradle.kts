@@ -28,12 +28,12 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("String", "joaname", "HoroscApp")
+            resValue("String", "joaname", "HoroscopoApp")
             buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
         getByName("debug"){
             isDebuggable = true
-            resValue("string", "joaname", "[DEBUG] HoroscApp")
+            resValue("string", "joaname", "[DEBUG] HoroscopoApp")
             buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"")
         }
     }

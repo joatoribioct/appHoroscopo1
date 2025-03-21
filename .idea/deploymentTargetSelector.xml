@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-03-20T22:37:38.912974400Z">
+        <DropdownSelection timestamp="2025-03-20T22:51:16.923267700Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\The Mask Power\.android\avd\curso_intermedio.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\The Mask Power\.android\avd\Pixel_4_API_28.avd" />
             </handle>
           </Target>
         </DropdownSelection>
