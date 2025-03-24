@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.joatoribio.horoscopoapp.CustomTestRunner"
     }
 
     buildTypes {
@@ -34,7 +34,7 @@ android {
         getByName("debug"){
             isDebuggable = true
             resValue("string", "joaname", "[DEBUG] HoroscopoApp")
-            buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"")
+            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
     }
     compileOptions {
@@ -52,6 +52,7 @@ android {
 }
 
 dependencies {
+
     val navVersion = "2.8.8"
     val camaraVersion = "1.4.1"
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
@@ -73,6 +74,7 @@ dependencies {
 
 
 
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -85,4 +87,10 @@ dependencies {
     testImplementation("io.mockk:mockk:1.13.17")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.6.1")
+    androidTestImplementation("androidx.test.espresso:espresso-intents:3.6.1")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.51.1")
+    androidTestImplementation("androidx.fragment:fragment-testing:1.8.6")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.51.1")
+
 }
