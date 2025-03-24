@@ -3,7 +3,6 @@ package com.joatoribio.horoscopoapp.ui.horoscopos
 import androidx.lifecycle.ViewModel
 import com.joatoribio.horoscopoapp.data.providers.HoroscopoProvider
 import com.joatoribio.horoscopoapp.domain.model.HoroscopoInfo
-import com.joatoribio.horoscopoapp.domain.model.HoroscopoInfo.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
